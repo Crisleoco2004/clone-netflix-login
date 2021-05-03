@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: Helvetica, sans-serif;
+  color: #8C8C8C;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #8C8C8C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contenedor {
+  margin: 0 auto;
+}
+
+.logotipo {
+  width: 110px;
+  margin-top: .5rem;
+  margin-left: 3%;
+}
+
+.formulario-login {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 750px;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+}
+
+form legend {
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+form .campo {
+  display: flex;
+  position: relative;
+  margin-bottom: .8rem;
+}
+
+form .campo label {
+  position: absolute;
+  top: 1.1rem;
+  left: 1rem;
+  font-size: .9rem;
+  transition: font-size .2s ease, top .2s ease;
+}
+
+form .campo input {
+  flex: 1;
+  padding: 1.3rem 1rem .7rem 1rem;
+  border: none;
+  color: #FFFFFF;
+  background-color: #323232;
+  border-radius: 5px;
+}
+
+form .campo input:focus {
+  background-color: #454545;
+  outline: none;
+}
+
+form .campo input:focus + label {
+  font-size: .7rem;
+  top: .5rem;
+}
+
+form .campo span {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+form .submit {
+  display: flex;
+  margin-top: 2rem;
+}
+
+form .submit input[type="submit"] {
+  background-color: #db0c16;
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+form .submit input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+form .acciones {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 0;
+  margin: .5rem 0 1rem 0;
+}
+
+form .acciones label, form .acciones a {
+  font-size: .8rem;
+  text-decoration: none;
+}
+
+.contenido-inferior {
+  margin-bottom: 8rem;
+}
+
+.contenido-inferior a {
+  font-size: .8rem;
+}
+
+.contenido-inferior .nuevo-usuario {
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.contenido-inferior .nuevo-usuario a {
+  font-size: 1rem;
+  color: #FFFFFF;
+  margin-left: .5rem;
+}
+
+.valido p {
+  display: none;
+}
+
+.alerta {
+  color: #E87C03;
+  display: block;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+.site-footer {
+  border-top: 1px solid #8C8C8C;
+  padding: 2rem 4rem;
+}
+
+@media (min-width: 750px) {
+  .site-footer {
+    border-top: unset;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 2rem 0;
+  }
+}
+
+@media (min-width: 750px) {
+  .site-footer .contenedor {
+    max-width: 50%;
+  }
+}
+
+.site-footer .menu-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1200) {
+  .site-footer .menu-footer {
+    justify-content: unset;
+  }
+}
+
+.site-footer .menu-footer a {
+  flex: 0 0 auto;
+  font-size: .8rem;
+  margin-right: 2rem;
+  padding: .5rem 0;
+}
+
+.site-footer .menu-footer a:last-of-type {
+  margin-right: 0;
+}
+
+.site-footer select {
+  appearance: none;
+  padding: .5rem 2rem;
+  margin: 2rem 0 3rem 0;
+  border: 1px solid #454545;
+  border-radius: 5px;
+  font-size: .8rem;
+  background-color: #000000;
+  color: #8C8C8C;
+}
+
+@media (min-width: 750px) {
+  html {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://res.cloudinary.com/crisleoco/image/upload/v1620056755/bg_kx3okg.jpg");
+  }
+  body {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .formulario-login {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 450px;
+    padding: 2rem 4rem;
+    margin: 1rem auto 4rem auto;
+    border-radius: 5px;
+  }
+}
